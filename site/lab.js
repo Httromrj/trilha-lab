@@ -115,6 +115,129 @@ const distributions = {
   geral: [["python-base", 25], ["colecoes", 25], ["funcoes", 25], ["pandas", 25]]
 };
 
+const pythonLessonPlan = [
+  {
+    lesson: "01 - Saida, texto e variaveis",
+    context: "python-base",
+    tasks: [
+      "Imprima seu nome e sua idade",
+      "Guarde seu nome em uma variavel",
+      "Mostre uma mensagem de boas-vindas",
+      "Monte uma frase com f-string",
+      "Transforme texto em maiusculas",
+      "Transforme texto em minusculas"
+    ]
+  },
+  {
+    lesson: "02 - Entrada e conversoes",
+    context: "python-base",
+    tasks: [
+      "Peca o nome usando input",
+      "Peca a idade usando input",
+      "Converta texto para inteiro",
+      "Converta texto para decimal",
+      "Calcule idade daqui a 5 anos",
+      "Conte letras de um nome"
+    ]
+  },
+  {
+    lesson: "03 - Operadores e decisoes simples",
+    context: "python-base",
+    tasks: [
+      "Some dois numeros",
+      "Subtraia dois numeros",
+      "Multiplique dois numeros",
+      "Divida dois numeros",
+      "Calcule o resto de uma divisao",
+      "Calcule desconto de um produto",
+      "Calcule media de duas notas",
+      "Compare dois numeros",
+      "Verifique se a pessoa e maior de idade",
+      "Calcule IMC simples"
+    ]
+  },
+  {
+    lesson: "04 - Listas e repeticao",
+    context: "colecoes",
+    tasks: [
+      "Crie uma lista de linguagens",
+      "Acesse o primeiro item da lista",
+      "Adicione item com append",
+      "Remova item da lista",
+      "Conte itens com len",
+      "Percorra lista com for",
+      "Some valores de uma lista",
+      "Encontre o maior valor",
+      "Encontre o menor valor",
+      "Filtre numeros pares"
+    ]
+  },
+  {
+    lesson: "05 - Dicionarios, sets e fluxo",
+    context: "colecoes",
+    tasks: [
+      "Crie uma tupla de modulos",
+      "Crie um set sem repeticao",
+      "Verifique item com in",
+      "Crie um dicionario de aluno",
+      "Leia valor de um dicionario",
+      "Atualize status no dicionario",
+      "Percorra chaves e valores",
+      "Crie lista de dicionarios",
+      "Crie menu simples com if",
+      "Crie while com contador"
+    ]
+  },
+  {
+    lesson: "06 - Funcoes pequenas",
+    context: "funcoes",
+    tasks: [
+      "Crie funcao sem parametro",
+      "Crie funcao com nome",
+      "Crie funcao de soma",
+      "Crie funcao de media",
+      "Retorne percentual",
+      "Valide texto vazio",
+      "Valide numero positivo",
+      "Calcule desconto com funcao",
+      "Use valor padrao em funcao",
+      "Crie mini calculadora"
+    ]
+  },
+  {
+    lesson: "07 - Dados com pandas",
+    context: "pandas",
+    tasks: [
+      "Leia CSV de gorjetas",
+      "Mostre primeiras linhas",
+      "Veja colunas do DataFrame",
+      "Conte linhas e colunas",
+      "Calcule media da conta",
+      "Calcule media da gorjeta",
+      "Encontre maior gorjeta",
+      "Filtre contas acima de 20",
+      "Agrupe gorjeta por dia",
+      "Crie resumo textual"
+    ]
+  },
+  {
+    lesson: "08 - Projeto guiado de dados",
+    context: "pandas",
+    tasks: [
+      "Crie coluna percentual",
+      "Ordene valores",
+      "Selecione colunas",
+      "Use describe",
+      "Verifique nulos",
+      "Conte valores por dia",
+      "Compare almoco e jantar",
+      "Prepare X e y",
+      "Detecte valor acima da media",
+      "Explique uma descoberta"
+    ]
+  }
+];
+
 const sqlLessonPlan = [
   {
     lesson: "01 - Conhecer tabelas",
@@ -306,6 +429,81 @@ const iaPools = {
   ]
 };
 
+const iaLessonPlan = [
+  {
+    lesson: "01 - Fundamentos de IA",
+    context: "ia-base",
+    tasks: [
+      "Explique o que e IA em uma frase",
+      "Liste limites de um assistente de IA",
+      "Explique alucinacao de IA",
+      "Identifique uma pergunta fora de escopo",
+      "Compare resposta util e resposta perigosa",
+      "Explique quando nao usar IA"
+    ]
+  },
+  {
+    lesson: "02 - Prompts com contexto",
+    context: "ia-base",
+    tasks: [
+      "Crie um prompt para pedir ajuda em Python",
+      "Crie um prompt com contexto do aluno",
+      "Diga o formato esperado da resposta",
+      "Compare prompt vago e prompt especifico",
+      "Crie prompt para explicar erro",
+      "Crie prompt para nao dar resposta pronta"
+    ]
+  },
+  {
+    lesson: "03 - IA aplicada a dados",
+    context: "ia-base",
+    tasks: [
+      "Transforme dados em contexto",
+      "Monte prompt para resumir CSV",
+      "Monte prompt para revisar SQL",
+      "Crie prompt para gerar exercicios",
+      "Crie prompt para resumir uma tabela",
+      "Crie prompt para explicar uma descoberta"
+    ]
+  },
+  {
+    lesson: "04 - Seguranca e escopo",
+    context: "ia-base",
+    tasks: [
+      "Defina dados que nao devem ser expostos",
+      "Crie resposta segura para duvida fiscal",
+      "Crie exemplo de fallback",
+      "Defina limites do assistente educacional",
+      "Crie regra para recusar pedido fora da trilha",
+      "Crie checklist de privacidade antes de usar IA"
+    ]
+  },
+  {
+    lesson: "05 - Avaliacao de respostas",
+    context: "ia-base",
+    tasks: [
+      "Crie checklist de qualidade da resposta",
+      "Crie metrica simples de utilidade",
+      "Crie teste de resposta ruim",
+      "Crie teste de resposta boa",
+      "Crie rubrica de avaliacao",
+      "Compare duas respostas de IA"
+    ]
+  },
+  {
+    lesson: "06 - Assistentes e automacoes",
+    context: "ia-base",
+    tasks: [
+      "Escreva instrucoes do assistente",
+      "Defina persona educacional",
+      "Simule conversa curta",
+      "Crie plano de melhoria do assistente",
+      "Desenhe uma automacao para revisar exercicios",
+      "Crie roteiro para um assistente da Trilha Lab"
+    ]
+  }
+];
+
 const trackConfigs = {
   python: {
     label: "Python",
@@ -400,17 +598,18 @@ function makeChallengeFromSpec(id, spec, round = 1) {
     tips: spec.tips || tipsFor(spec.title, spec.context),
     starter: spec.starter || starterFor(spec.title, spec.context),
     stdin: "",
-    lesson: spec.lesson
+    lesson: spec.lesson,
+    track: spec.track
   };
 }
 
-function buildSqlChallenges(total) {
-  const selectedLessons = sqlLessonsForLevel(level.value);
+function buildLessonChallenges(total, selectedLessons, trackLabel) {
   const orderedSpecs = selectedLessons.flatMap((lesson) =>
     lesson.tasks.map((title) => ({
       title,
       context: lesson.context,
-      lesson: lesson.lesson
+      lesson: lesson.lesson,
+      track: trackLabel
     }))
   );
 
@@ -421,6 +620,10 @@ function buildSqlChallenges(total) {
     generated.push(makeChallengeFromSpec(generated.length + 1, spec, round));
   }
   return generated;
+}
+
+function buildSqlChallenges(total) {
+  return buildLessonChallenges(total, sqlLessonsForLevel(level.value), "SQL");
 }
 
 function sqlLessonsForLevel(levelName) {
@@ -440,11 +643,49 @@ function sqlLessonsForLevel(levelName) {
   return sqlLessonPlan.slice(0, 6);
 }
 
+function pythonLessonsForLevel(levelName) {
+  if (levelName === "intermediario") {
+    return pythonLessonPlan.slice(3);
+  }
+
+  if (levelName === "geral") {
+    return [
+      ...pythonLessonPlan.slice(3),
+      ...pythonLessonPlan.slice(0, 3)
+    ];
+  }
+
+  return pythonLessonPlan.slice(0, 6);
+}
+
+function iaLessonsForLevel(levelName) {
+  if (levelName === "intermediario") {
+    return iaLessonPlan.slice(3);
+  }
+
+  if (levelName === "geral") {
+    return [
+      ...iaLessonPlan.slice(3),
+      ...iaLessonPlan.slice(0, 3)
+    ];
+  }
+
+  return iaLessonPlan.slice(0, 3);
+}
+
 function buildChallenges(total) {
   const track = trackConfigs[trackSelect.value] || trackConfigs.python;
 
+  if (trackSelect.value === "python") {
+    return buildLessonChallenges(total, pythonLessonsForLevel(level.value), "Python");
+  }
+
   if (trackSelect.value === "sql") {
     return buildSqlChallenges(total);
+  }
+
+  if (trackSelect.value === "ia") {
+    return buildLessonChallenges(total, iaLessonsForLevel(level.value), "IA");
   }
 
   const generated = [];
@@ -671,7 +912,7 @@ function loadChallenge(index) {
   const item = challenges[currentIndex];
   const starter = splitStarter(item.starter, item.context);
   number.textContent = `Questão ${String(item.id).padStart(3, "0")}`;
-  labConfigSummary.textContent = item.lesson ? `SQL - ${item.lesson}` : baseConfigSummary;
+  labConfigSummary.textContent = item.lesson ? `${item.track || trackConfigs[trackSelect.value]?.label || "Trilha"} - ${item.lesson}` : baseConfigSummary;
   title.textContent = item.title;
   instruction.textContent = item.lesson ? `${item.lesson}. ${item.instruction}` : item.instruction;
   context.textContent = item.context;

@@ -22,13 +22,19 @@ http://127.0.0.1:8850
 - Executar e ver `print()`, erros e tracebacks.
 - Testar rapidamente variações dos exercícios.
 
-## Gerador por grau
+## Gerador por trilha e grau
 
 O aluno escolhe:
 
-- `Iniciante`: mais desafios de `print`, variáveis, `input`, strings, matemática e listas.
-- `Intermediário`: mais funções, organização de código, pandas e análise de dados.
-- `Revisão geral`: distribuição equilibrada entre fundamentos, coleções, funções e pandas.
+- `Iniciante`: começa pelos fundamentos da trilha escolhida.
+- `Intermediário`: pula a introdução e começa em problemas com mais combinação de conceitos.
+- `Revisão geral`: mistura blocos iniciais e intermediários para consolidar.
+
+Em Python, a sequência vai de `print`, variáveis, `input` e operadores para listas, dicionários, funções e pandas.
+
+Em SQL, a sequência vai de `SELECT` e escolha de colunas para filtros, agregações e `JOIN`.
+
+Em IA, a sequência vai de fundamentos e prompts para segurança, avaliação de respostas, assistentes e automações.
 
 O banco deve ter pelo menos 100 desafios por trilha, mas a sessão respeita a quantidade escolhida pelo aluno.
 
