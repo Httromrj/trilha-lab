@@ -1,0 +1,51 @@
+name: Validar Trilha
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+
+jobs:
+  validar-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Validar sintaxe
+        run: python -m compileall src
+
+      - name: Rodar lab de dados
+        run: python src/explorador_dados.py
+
+      - name: Rodar lab de ML
+        run: python src/ml_gorjetas.py
+
+      - name: Validar modo seguro do lab
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, "src")
+          import lab_execucao
+
+          assert lab_execucao.run_python("print(2 + 2)")["ok"]
+          assert lab_execucao.run_python("import os")["ok"] is False
+          assert lab_execucao.run_python("import pandas as pd")["ok"] is False
+          assert lab_execucao.run_python(
+              "from pathlib import Path\nPath('x.txt').write_text('bad')"
+          )["ok"] is False
+          assert lab_execucao.run_python(
+              "import pandas as pd\nprint(pd.read_csv('dados/relatorio_gorjetas.csv').shape)",
+              context="pandas",
+          )["ok"]
+          PY

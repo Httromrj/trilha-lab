@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trilha Lab</title>
+    <link rel="stylesheet" href="/site/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="/site/index.html">
+        <span class="brand-mark">Py</span>
+        <span>Trilha Lab</span>
+      </a>
+      <nav class="top-nav" aria-label="Navegação principal">
+        <a href="#trilha">Trilha</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#exemplos">Meus exemplos</a>
+        <a href="/lab">Lab</a>
+        <a href="https://github.com/Httromrj/trilha-lab" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" id="inicio">
+        <div>
+          <p class="eyebrow">Do zero ao intermediário</p>
+          <h1>Trilhas práticas de tecnologia com desafios progressivos, exemplos reais e laboratório seguro.</h1>
+          <p class="lead">
+            Escolha Python, SQL, IA ou Dados, estude uma etapa por vez, pratique no lab e avance sem pular fundamentos.
+          </p>
+        <div class="actions">
+          <a class="button primary" href="#trilha">Começar pela trilha</a>
+          <a class="button" href="/lab">Abrir lab de código</a>
+          <a class="button" href="/trilhas/sql/README.md">Trilha SQL</a>
+          <a class="button" href="#exemplos">Ver meus exemplos</a>
+        </div>
+        </div>
+        <aside class="run-card">
+          <span class="card-label">Para testar localmente</span>
+          <pre>cd C:\Users\Romulo\Documents\Cursos\PYTHON\jornada-python-ia-dados
+python src\lab_execucao.py</pre>
+          <p>Depois abra <strong>http://127.0.0.1:8850</strong>.</p>
+        </aside>
+      </section>
+
+      <section class="section" id="trilha">
+        <div class="section-title">
+          <p class="eyebrow">trilha</p>
+          <h2>12 fases, subindo o nível aos poucos</h2>
+        </div>
+        <div class="timeline">
+          <article class="step" data-level="iniciante">
+            <span>00</span>
+            <h3>Setup e terminal</h3>
+            <p>Ambiente, venv, execução de scripts e organização de estudo.</p>
+            <a href="/modulos/00-boas-vindas.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="iniciante">
+            <span>01</span>
+            <h3>Python base</h3>
+            <p>Variáveis, tipos, operadores, strings, entrada e saída.</p>
+            <a href="/modulos/01-python-base.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="iniciante">
+            <span>02</span>
+            <h3>Coleções e fluxo</h3>
+            <p>Listas, dicionários, sets, if, for, while e pequenos jogos.</p>
+            <a href="/modulos/02-colecoes-e-fluxo.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="iniciante">
+            <span>03</span>
+            <h3>Funções</h3>
+            <p>Reaproveitamento, parâmetros, retorno e organização de código.</p>
+            <a href="/modulos/03-funcoes-poo.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>04</span>
+            <h3>POO</h3>
+            <p>Classes, objetos, herança, propriedades e boas decisões.</p>
+            <a href="/modulos/03-funcoes-poo.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>05</span>
+            <h3>Arquivos e APIs</h3>
+            <p>TXT, CSV, JSON, requests e caminhos seguros.</p>
+            <a href="/modulos/04-arquivos-apis.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>06</span>
+            <h3>Pandas</h3>
+            <p>DataFrames, filtros, agrupamentos, limpeza e perguntas de dados.</p>
+            <a href="/modulos/05-dados-pandas.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>07</span>
+            <h3>Visualização</h3>
+            <p>Gráficos úteis para explicar descobertas sem confundir.</p>
+            <a href="/modulos/06-visualizacao.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>08</span>
+            <h3>Banco de dados</h3>
+            <p>SQLite, tabelas, consultas e persistência simples.</p>
+            <a href="/modulos/07-banco-dados.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>09</span>
+            <h3>Machine Learning</h3>
+            <p>Regressão, classificação, métricas e validação.</p>
+            <a href="/modulos/08-ia-ml.md">Abrir módulo</a>
+          </article>
+          <article class="step" data-level="intermediário">
+            <span>10</span>
+            <h3>IA aplicada</h3>
+            <p>Prompts, contexto, limites e assistentes responsáveis.</p>
+            <a href="/modulos/09-projeto-final.md">Abrir módulo</a>
+          </article>
+          <article class="step final" data-level="portfólio">
+            <span>11</span>
+            <h3>Projeto final</h3>
+            <p>Um assistente educacional de dados inspirado pelo TaxPilot.</p>
+            <a href="/modulos/09-projeto-final.md">Abrir módulo</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="desafios">
+        <div class="section-title">
+          <p class="eyebrow">prática</p>
+          <h2>Banco com 100+ desafios</h2>
+          <p>O lab organiza desafios por trilha e permite escolher quantos praticar em cada sessão.</p>
+          <a class="button" href="/lab">Abrir desafios no lab</a>
+          <a class="button" href="/desafios/100-desafios-python.md">Ver lista completa</a>
+        </div>
+        <div class="challenge-grid">
+          <article><span>01</span>Calculadora de metas</article>
+          <article><span>02</span>Validador de idade</article>
+          <article><span>03</span>Menu de estudos</article>
+          <article><span>04</span>Detector de pares</article>
+          <article><span>05</span>Ranking com listas</article>
+          <article><span>06</span>Agenda com dicionários</article>
+          <article><span>07</span>Quiz de Python</article>
+          <article><span>08</span>Função de progresso</article>
+          <article><span>09</span>Classe Aluno</article>
+          <article><span>10</span>Leitor JSON</article>
+          <article><span>11</span>Explorador CSV</article>
+          <article><span>12</span>Resumo com pandas</article>
+          <article><span>13</span>Limpeza de dados</article>
+          <article><span>14</span>Gráfico de gorjetas</article>
+          <article><span>15</span>Dashboard simples</article>
+          <article><span>16</span>Banco de missões</article>
+          <article><span>17</span>Consulta SQL</article>
+          <article><span>18</span>Pipeline de dados</article>
+          <article><span>19</span>Regressão linear</article>
+          <article><span>20</span>Métricas de modelo</article>
+          <article><span>21</span>Anomalias simples</article>
+          <article><span>22</span>Prompt com contexto</article>
+          <article><span>23</span>Assistente de estudo</article>
+          <article><span>24</span>Pitch do projeto</article>
+          <article><span>100</span>Lista completa no lab</article>
+        </div>
+      </section>
+
+      <section class="section" id="exemplos">
+        <div class="section-title">
+          <p class="eyebrow">base real</p>
+          <h2>Seus exemplos entram como referência</h2>
+          <p>
+            Os arquivos originais ficam preservados em backup. A trilha usa versões explicadas e corrigidas.
+          </p>
+        </div>
+        <div class="example-grid">
+          <a href="/materiais-originais/exemplos/Apanhado.py">Apanhado.py <small>Python base, strings e fluxo</small></a>
+          <a href="/materiais-originais/exemplos/listas_em_python.py">listas_em_python.py <small>listas, tuplas e métodos</small></a>
+          <a href="/materiais-originais/exemplos/conjuntos.py">conjuntos.py <small>sets e operações</small></a>
+          <a href="/materiais-originais/exemplos/heranca_POO.py">heranca_POO.py <small>POO e herança</small></a>
+          <a href="/materiais-originais/exemplos/Leitura_arquivos_csv.py">Leitura_arquivos_csv.py <small>CSV</small></a>
+          <a href="/materiais-originais/exemplos/Leitura_arquivos_json.py">Leitura_arquivos_json.py <small>JSON</small></a>
+          <a href="/materiais-originais/exemplos/Pandas_API.py">Pandas_API.py <small>pandas e visualização</small></a>
+          <a href="/materiais-originais/exemplos/Modelo_regressao.py">Modelo_regressao.py <small>primeiro ML</small></a>
+          <a href="/materiais-originais/banco/Leitura_arquivos_banco_de_dados.py">SQLite <small>banco de dados</small></a>
+          <a href="/materiais-originais/Deteccao_anomalias-Python/deteccao_anomalias.py">Detecção de anomalias <small>ML intermediário</small></a>
+        </div>
+        <a class="text-link" href="/docs/catalogo-exemplos.md">Ver catálogo completo dos exemplos</a>
+      </section>
+
+      <section class="section lab-strip" id="lab">
+        <div>
+          <p class="eyebrow">execução segura</p>
+          <h2>Lab por contexto</h2>
+          <p>
+            O executor só libera o que combina com a aula selecionada. Python Base não roda pandas,
+            e Pandas só lê arquivos dentro de <code>dados/</code>.
+          </p>
+        </div>
+        <a class="button primary" href="/lab">Abrir lab agora</a>
+      </section>
+
+      <section class="section lab-strip" id="sql">
+        <div>
+          <p class="eyebrow">nova trilha</p>
+          <h2>SQL e bancos de dados</h2>
+          <p>
+            Uma trilha separada para SELECT, filtros, agregações, joins e modelagem.
+            O caminho de DBA com IA fica planejado como próxima estrutura.
+          </p>
+        </div>
+        <a class="button primary" href="/trilhas/sql/README.md">Abrir trilha SQL</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>Romulo | Trilha Lab</span>
+      <nav>
+        <a href="https://github.com/Httromrj/trilha-lab" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="/docs/redes-sociais.md">Redes sociais</a>
+      </nav>
+    </footer>
+
+    <script src="/site/app.js"></script>
+  </body>
+</html>

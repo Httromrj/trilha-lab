@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lab Colab Local</title>
+    <link rel="stylesheet" href="/site/lab.css" />
+  </head>
+  <body>
+    <header class="colab-topbar">
+      <div class="colab-mark">co</div>
+      <a href="/site/index.html" class="back">Trilha</a>
+      <strong>Lab Colab Local</strong>
+      <nav class="top-actions" aria-label="Controles do lab">
+        <button id="openSettings" class="ghost-button" type="button">Configurar</button>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="question-card">
+        <div class="question-meta">
+          <span id="challengeNumber">Questao 001</span>
+          <span id="labConfigSummary">Python - Iniciante - 100 desafios</span>
+          <div class="progress-panel" aria-label="Progresso estimado">
+            <span id="progressText">1 de 10</span>
+            <span id="progressEstimate">0% concluido</span>
+            <div class="progress-track"><span id="progressFill"></span></div>
+          </div>
+        </div>
+
+        <h1 id="questionTitle">Imprima seu nome e sua idade</h1>
+        <p id="questionInstruction">
+          Use `print()` para mostrar seu nome e sua idade na tela.
+        </p>
+
+        <details class="tips">
+          <summary>Dicas</summary>
+          <ul id="tipsList"></ul>
+        </details>
+      </section>
+
+      <section class="cell">
+        <div class="cell-left">
+          <button class="play" id="runCell" type="button" aria-label="Executar celula"></button>
+        </div>
+        <div class="cell-main">
+          <div class="cell-toolbar">
+            <span id="currentContext">python-base</span>
+            <button id="nextChallenge" type="button">Proxima</button>
+          </div>
+          <div id="codeNotes" class="code-notes"></div>
+          <textarea id="codeInput" class="code" spellcheck="false"></textarea>
+          <div id="autocomplete" class="autocomplete" hidden></div>
+          <div class="input-panel">
+            <label for="stdinInput">Entrada para input()</label>
+            <textarea id="stdinInput" placeholder="Uma resposta por linha. Exemplo:&#10;Romulo&#10;30"></textarea>
+          </div>
+          <div id="runFeedback" class="run-feedback" hidden></div>
+          <pre id="output" class="output">A saida aparece aqui depois de executar.</pre>
+        </div>
+      </section>
+
+      <section class="focus-footer">
+        <button id="previousChallenge" type="button">Anterior</button>
+      </section>
+
+      <section id="completionPanel" class="completion-panel" hidden>
+        <div>
+          <strong>Sessao concluida</strong>
+          <p id="completionText">Voce concluiu os desafios desta sessao.</p>
+        </div>
+        <div class="completion-actions">
+          <button id="moreChallenges" type="button">Fazer mais exercicios</button>
+          <a class="button-link" href="/site/index.html#trilha">Conhecer a trilha</a>
+        </div>
+      </section>
+    </main>
+
+    <aside id="challengeDrawer" class="drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <div class="drawer-header">
+          <div>
+            <strong>Desafios gerados</strong>
+            <p>Escolha quando quiser trocar de exercício.</p>
+          </div>
+          <button id="closeChallenges" type="button">Fechar</button>
+        </div>
+        <input id="challengeSearch" type="search" placeholder="Buscar: input, soma, variável..." />
+        <div id="challengeList" class="challenge-list"></div>
+      </div>
+    </aside>
+
+    <aside id="settingsDrawer" class="drawer" aria-hidden="true">
+      <div class="drawer-panel settings-panel">
+        <div class="drawer-header">
+          <div>
+            <strong>Configurar trilha</strong>
+            <p>Escolha o tema, nivel e quantidade de desafios.</p>
+          </div>
+          <button id="closeSettings" type="button">Fechar</button>
+        </div>
+        <label>
+          Trilha
+          <select id="trackSelect">
+            <option value="python">Python</option>
+            <option value="sql">SQL</option>
+            <option value="ia">IA</option>
+          </select>
+        </label>
+        <label>
+          Grau
+          <select id="studentLevel">
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediario</option>
+            <option value="geral">Revisao geral</option>
+          </select>
+        </label>
+        <label>
+          Quantidade
+          <input id="challengeAmount" type="number" min="1" max="100" step="1" value="10" />
+        </label>
+        <button id="generateChallenges" class="primary-action" type="button">Aplicar</button>
+        <p id="generateStatus" class="generate-status">10 desafios carregados</p>
+        <button id="openChallengesFromSettings" class="secondary-action" type="button">Ver desafios gerados</button>
+      </div>
+    </aside>
+
+    <script src="/site/lab.js"></script>
+  </body>
+</html>
+
