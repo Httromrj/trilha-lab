@@ -280,6 +280,12 @@ p {
   background: var(--soft);
 }
 
+.shortcut-hint {
+  margin-right: auto;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .code,
 #stdinInput {
   width: 100%;

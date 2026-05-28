@@ -405,7 +405,8 @@ function makeChallengeFromSpec(id, spec, round = 1) {
 }
 
 function buildSqlChallenges(total) {
-  const orderedSpecs = sqlLessonPlan.flatMap((lesson) =>
+  const selectedLessons = sqlLessonsForLevel(level.value);
+  const orderedSpecs = selectedLessons.flatMap((lesson) =>
     lesson.tasks.map((title) => ({
       title,
       context: lesson.context,
@@ -420,6 +421,23 @@ function buildSqlChallenges(total) {
     generated.push(makeChallengeFromSpec(generated.length + 1, spec, round));
   }
   return generated;
+}
+
+function sqlLessonsForLevel(levelName) {
+  if (levelName === "intermediario") {
+    return sqlLessonPlan.filter((lesson) =>
+      ["sql-filter", "sql-aggregate", "sql-join"].includes(lesson.context)
+    );
+  }
+
+  if (levelName === "geral") {
+    return [
+      ...sqlLessonPlan.slice(3),
+      ...sqlLessonPlan.slice(0, 3)
+    ];
+  }
+
+  return sqlLessonPlan.slice(0, 6);
 }
 
 function buildChallenges(total) {
@@ -915,6 +933,19 @@ code.addEventListener("keydown", (event) => {
     code.selectionStart = code.selectionEnd = start + 4;
   }
   if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
+    event.preventDefault();
+    runCode();
+  }
+  if (event.key === "F9") {
+    event.preventDefault();
+    event.stopPropagation();
+    runCode();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.target === code) return;
+  if (event.key === "F9") {
     event.preventDefault();
     runCode();
   }

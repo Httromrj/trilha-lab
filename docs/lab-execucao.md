@@ -35,6 +35,7 @@ O banco deve ter pelo menos 100 desafios por trilha, mas a sessão respeita a qu
 ## Atalhos
 
 - `Ctrl + Enter`: executa o código.
+- `F9`: executa a célula atual.
 - `Tab`: insere quatro espaços no editor.
 
 ## Segurança
